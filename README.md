@@ -251,49 +251,6 @@ Note: `mapsUrl` is currently parsed by `Extract Input Data` but not used by down
 | Telegram API | Triggering and completion notifications | `Telegram Trigger`, `Notification message` |
 | Google Gemini (PaLM) API | AI summary and email extraction | `Message a model`, `Message a model1` |
 
-## Environment Variables
-Create a local `.env` file from `.env.example` and populate credentials:
-
-```env
-# n8n runtime
-N8N_HOST=localhost
-N8N_PORT=5678
-N8N_PROTOCOL=http
-N8N_EDITOR_BASE_URL=http://localhost:5678
-WEBHOOK_URL=http://localhost:5678
-N8N_ENCRYPTION_KEY=replace_with_a_long_random_value
-
-# Apify
-APIFY_TOKEN=replace_with_apify_token
-
-# Google Gemini / Google AI
-GEMINI_API_KEY=replace_with_gemini_key
-
-# Telegram
-TELEGRAM_BOT_TOKEN=replace_with_telegram_bot_token
-
-# Google Sheets (OAuth app/client used by n8n credential setup)
-GOOGLE_CLIENT_ID=replace_with_google_client_id
-GOOGLE_CLIENT_SECRET=replace_with_google_client_secret
-GOOGLE_REFRESH_TOKEN=replace_with_google_refresh_token
-GOOGLE_SHEET_ID=1yA7peKjky01cBUuKkgcKoG1BpB5tyUIUzjVn_YoNoZM
-GOOGLE_SHEET_NAME=Sheet1
-```
-
-Important:
-- n8n credentials are typically configured through the UI and stored securely by n8n.
-- Environment variables above are a deployment aid and reference template.
-
-## Screenshots
-Add screenshots to the `screenshots/` folder and update these links:
-
-```md
-![Workflow Canvas](screenshots/01-workflow-canvas.png)
-![Telegram Trigger Example](screenshots/02-telegram-input.png)
-![Google Sheets Output](screenshots/03-sheets-output.png)
-![Execution Logs](screenshots/04-execution-log.png)
-```
-
 ## Project Architecture (Recruiter + Developer View)
 ### Recruiter View
 - Demonstrates practical automation architecture using low-code orchestration.
